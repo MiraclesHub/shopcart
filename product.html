@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopcart — Product</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ======= TOP BAR ======= -->
+<div class="topbar">
+  <div class="container inner">
+    <span class="left">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +001234567890
+    </span>
+    <span class="center">Get 50% Off on Selected Items <span class="sep">|</span> <b>Shop Now</b></span>
+    <span class="right">
+      <button>Eng <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <button>Location <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+    </span>
+  </div>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+<header class="navbar">
+  <div class="container inner">
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#003D29" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#003D29"/>
+        <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B"/>
+        <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#003D29"/>
+        <circle cx="17" cy="33" r="2.6" fill="#003D29"/>
+        <circle cx="30" cy="33" r="2.6" fill="#0AAD0A"/>
+      </svg>
+      <span>Shopcart</span>
+    </a>
+    <nav class="mainnav">
+      <a href="index.html">Categories <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+      <a href="#">Deals</a>
+      <a href="#">What's New</a>
+      <a href="#">Delivery</a>
+    </nav>
+    <div class="searchbar">
+      <div class="field">
+        <input type="text" placeholder="Search Product" aria-label="Search Product">
+        <span class="go"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+      </div>
+    </div>
+    <div class="navicons">
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="lbl">Account</span></a>
+      <a href="cart.html" class="cartlink">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21.5 7H6"/><path d="M12 8v6M9 11h6"/></svg>
+        <span class="lbl">Cart</span></a>
+    </div>
+  </div>
+  <div class="nav-rule"></div>
+</header>
+
+<!-- mobile drawer -->
+<nav class="drawer" aria-label="Mobile navigation">
+  <a href="index.html">Categories</a>
+  <a href="#">Deals</a>
+  <a href="#">What's New</a>
+  <a href="#">Delivery</a>
+  <a href="cart.html">Cart</a>
+</nav>
+<div class="drawer-backdrop"></div>
+
+<main class="container">
+
+  <!-- ======= BREADCRUMB ======= -->
+  <nav class="crumbs">
+    <a href="index.html">Electronics</a><span class="sep">/</span>
+    <a href="index.html">Audio</a><span class="sep">/</span>
+    <a href="index.html">Headphones</a><span class="sep">/</span>
+    <a href="index.html">Shop Headphones by type</a><span class="sep">/</span>
+    <b id="crumbName">airpods-max</b>
+  </nav>
+
+  <!-- ======= PRODUCT DETAIL ======= -->
+  <section class="pdp">
+    <!-- gallery -->
+    <div class="pdp-gallery">
+      <div class="main"><img id="mainImg" src="assets/img/headphone-red.png" alt="Product photo"></div>
+      <div class="thumbs">
+        <button class="thumb-b" data-src="assets/img/headphone-green.png"><img src="assets/img/headphone-green.png" alt="Green"></button>
+        <button class="thumb-b" data-src="assets/img/headphone-black.png"><img src="assets/img/headphone-black.png" alt="Black"></button>
+        <button class="thumb-b" data-src="assets/img/headphone-blue.png"><img src="assets/img/headphone-blue.png" alt="Blue"></button>
+        <button class="thumb-b active" data-src="assets/img/headphone-red.png"><img src="assets/img/headphone-red.png" alt="Pink"></button>
+      </div>
+    </div>
+
+    <!-- info column -->
+    <div class="pdp-info">
+      <h1 id="pname">Airpods- Max</h1>
+      <p class="sub" id="pdesc">a perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.</p>
+      <div class="rate" id="prate"></div>
+      <hr>
+      <div class="pdp-price" id="pprice"><sup>$</sup>549.00 <span style="font-weight:600">or 99.99/month</span></div>
+      <p class="pdp-finance">Suggested payments with 6 months special financing</p>
+      <hr>
+      <h6>Choose a Color</h6>
+      <div class="swatches" id="swatches">
+        <button class="swatch active" data-color="Pink"   style="background:linear-gradient(to bottom,#F2C7BD 50%,#D9645A 50%)" aria-label="Pink"></button>
+        <button class="swatch" data-color="Black"  style="background:linear-gradient(to bottom,#DEDFDF 50%,#25262A 50%)" aria-label="Black"></button>
+        <button class="swatch" data-color="Green"  style="background:linear-gradient(to bottom,#DAE6DA 50%,#A4BFA6 50%)" aria-label="Green"></button>
+        <button class="swatch" data-color="Silver" style="background:linear-gradient(to bottom,#F0F0F0 50%,#C9CBCD 50%)" aria-label="Silver"></button>
+        <button class="swatch" data-color="Blue"   style="background:linear-gradient(to bottom,#C7D4E0 50%,#5B7B99 50%)" aria-label="Blue"></button>
+      </div>
+      <hr>
+      <!-- qty stepper is HARD-CAPPED at live available stock (see script) -->
+      <div class="buyrow">
+        <div class="qty">
+          <button id="qminus" aria-label="Decrease">−</button>
+          <span id="qval">1</span>
+          <button id="qplus" aria-label="Increase">+</button>
+        </div>
+        <div class="stock" id="stockBox"><b>Only <span id="stockN">12</span> Items Left!</b><small>Don't miss it</small></div>
+      </div>
+      <div class="ctarow">
+        <button class="btn btn-green" id="buyNow">Buy Now</button>
+        <button class="btn btn-outline" id="addCart">Add to Cart</button>
+      </div>
+
+      <!-- delivery promises -->
+      <div class="shipbox">
+        <div class="row">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8h13v9H1zM14 11h4l3 3v3h-7"/><circle cx="5.5" cy="18.5" r="1.8"/><circle cx="17.5" cy="18.5" r="1.8"/></svg>
+          <div><h6>Free Delivery</h6><p><u>Enter your Postal code for Delivery Availability</u></p></div>
+        </div>
+      </div>
+      <div class="shipbox">
+        <div class="row">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8.5v7l-9 4.5L3 15.5v-7L12 4l9 4.5z"/><path d="M3 8.5l9 4.5 9-4.5M12 13v7.5"/></svg>
+          <div><h6>Return Delivery</h6><p>Free 30days Delivery Returns. <u>Details</u></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr-sec">
+
+  <!-- ======= SIMILAR (rendered from live catalog so stock badges apply) ======= -->
+  <div class="sec-head"><h3>Similar Items You Might Like</h3></div>
+  <section class="pgrid" id="similarGrid"></section>
+
+  <hr class="hr-sec" style="margin-top:64px">
+
+  <!-- ======= RECENTLY VIEWED (kept design title) ======= -->
+  <div class="sec-head"><h3>Rencently Viewed</h3></div>
+  <section class="pgrid" id="recentGrid" style="margin-bottom:20px"></section>
+
+</main>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="container cols">
+    <div>
+      <div class="flogo">
+        <svg viewBox="0 0 40 40" fill="none" width="32" height="32" aria-hidden="true">
+          <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#fff"/>
+          <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B"/>
+          <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#fff"/>
+          <circle cx="17" cy="33" r="2.6" fill="#fff"/>
+          <circle cx="30" cy="33" r="2.6" fill="#0AAD0A"/>
+        </svg>
+        <span>Shopcart</span>
+      </div>
+      <p class="about">Your one-stop department store for electronics, fashion, books and more — delivered fast, priced better.</p>
+    </div>
+    <div><h6>Company</h6><ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Store Locations</a></li><li><a href="#">Our Blog</a></li></ul></div>
+    <div><h6>Support</h6><ul><li><a href="#">Help Center</a></li><li><a href="#">Track Order</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    <div class="contact">
+      <h6>Get in Touch</h6>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +001234567890</p>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> support@shopcart.com</p>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+    </div>
+  </div>
+  <div class="bar">
+    <div class="container inner">
+      <span>© 2026 Shopcart. All rights reserved.</span>
+      <span class="links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+/* Product page controller: stock-aware PDP driven by the live catalog. */
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("prate").innerHTML = stars(5) + '<span class="n">(121)</span>';
+
+  /* Which product? (?id=..., default airpods-max per design) */
+  const id = new URLSearchParams(location.search).get("id") || "airpods-max";
+  const pid = id;
+
+  /* ----- static chrome: gallery, swatches ----- */
+  const main = document.getElementById("mainImg");
+  main.style.transition = "opacity .18s ease";
+  document.querySelectorAll(".thumb-b").forEach(t => t.addEventListener("click", () => {
+    document.querySelectorAll(".thumb-b").forEach(x => x.classList.remove("active"));
+    t.classList.add("active");
+    main.style.opacity = 0;
+    setTimeout(() => { main.src = t.dataset.src; main.style.opacity = 1; }, 160);
+  }));
+  document.querySelectorAll(".swatch").forEach(s => s.addEventListener("click", () => {
+    document.querySelectorAll(".swatch").forEach(x => x.classList.remove("active"));
+    s.classList.add("active");
+  }));
+
+  /* ----- everything stock-dependent runs after /api/catalog arrives ----- */
+  const start = () => {
+    const p = CATALOG[pid];
+    if (p){
+      /* populate name/price/breadcrumb from the live catalog */
+      document.getElementById("pname").textContent = p.name;
+      document.getElementById("crumbName").textContent = pid;
+      document.title = "Shopcart — " + p.name;
+      document.getElementById("pprice").innerHTML =
+        `<sup>$</sup>${fmt(p.price)} <span style="font-weight:600">or ${fmt(p.price/6)}/month</span>`;
+      /* custom PDP gallery only for the hero headphone product */
+      if (pid !== "airpods-max"){
+        main.src = p.img;
+        document.querySelector(".thumbs").style.display = "none";
+      }
+      /* similar + recent grids share the same card renderer (with stock) */
+      document.getElementById("similarGrid").innerHTML =
+        ["gaming","macbook","homepod","sleeve"].filter(x => x !== pid).map(cardHTML).join("");
+      document.getElementById("recentGrid").innerHTML =
+        ["earbuds-ipx8","airpods-max","bose-bt","vivefox"].filter(x => x !== pid).slice(0,4)
+        .map(cardHTML).join("");
+      bindCards(document);
+      applyStock();
+    }
+  };
+  if (CATALOG_READY) start();
+  else document.addEventListener("catalog:ready", start, { once: true });
+
+  /* ----- stock-aware purchase panel ----- */
+  let q = 1;
+  const qv = document.getElementById("qval");
+  const plus = document.getElementById("qplus"), minus = document.getElementById("qminus");
+
+  /** Reflect live availability into UI: stepper cap, OOS state, CTA disable. */
+  function applyStock(){
+    const avail = available(pid);
+    const box = document.getElementById("stockBox");
+    const buyNow = document.getElementById("buyNow"), addCart = document.getElementById("addCart");
+    if (avail <= 0){
+      box.classList.add("outof");
+      box.innerHTML = "<b>Out of Stock</b><small>Check back soon</small>";
+      plus.disabled = minus.disabled = true;
+      buyNow.disabled = addCart.disabled = true;
+      addCart.textContent = "Out of Stock";
+      return;
+    }
+    document.getElementById("stockN").textContent = avail;
+    q = Math.min(q, avail);                                   // never exceed stock
+    qv.textContent = q;
+    plus.disabled = q >= avail;                               // freeze "+" at cap
+    minus.disabled = q <= 1;
+  }
+
+  plus.onclick  = () => { q = Math.min(q + 1, available(pid)); qv.textContent = q; applyStock(); };
+  minus.onclick = () => { q = Math.max(q - 1, 1);              qv.textContent = q; applyStock(); };
+
+  document.getElementById("addCart").onclick = () =>
+    addToCart(pid, q);                                        // hard-capped client-side too
+  document.getElementById("buyNow").onclick = () => {
+    if (addToCart(pid, q) || getCart().some(l => l.id === pid))
+      location.href = "checkout.html";
+  };
+});
+</script>
+</body>
+</html>

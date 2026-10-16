@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopcart — Headphones For You!</title>
+  <!-- Inter typeface (falls back to system sans when offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- ======= TOP BAR : contact strip (hidden center on small screens) ======= -->
+  <div class="topbar">
+    <div class="container inner">
+      <span class="left">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        +001234567890
+      </span>
+      <span class="center">Get 50% Off on Selected Items <span class="sep">|</span> <b>Shop Now</b></span>
+      <span class="right">
+        <button>Eng <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg></button>
+        <button>Location <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg></button>
+      </span>
+    </div>
+  </div>
+
+  <!-- ======= NAVBAR (desktop) — collapses to hamburger drawer ≤860px ======= -->
+  <header class="navbar">
+    <div class="container inner">
+      <!-- hamburger (mobile only) -->
+      <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+
+      <a class="logo" href="index.html">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#003D29"
+            stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+          <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#003D29" />
+          <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B" />
+          <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#003D29" />
+          <circle cx="17" cy="33" r="2.6" fill="#003D29" />
+          <circle cx="30" cy="33" r="2.6" fill="#0AAD0A" />
+        </svg>
+        <span>Shopcart</span>
+      </a>
+
+      <!-- primary links -->
+      <nav class="mainnav">
+        <a href="index.html">Categories <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9l6 6 6-6" />
+          </svg></a>
+        <a href="#">Deals</a>
+        <a href="#">What's New</a>
+        <a href="#">Delivery</a>
+      </nav>
+
+      <!-- search pill -->
+      <div class="searchbar">
+        <div class="field">
+          <input id="searchInput" type="text" placeholder="Search Product" aria-label="Search Product">
+          <span class="go"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="7" />
+              <path d="M21 21l-4.3-4.3" />
+            </svg></span>
+        </div>
+      </div>
+
+      <!-- account + cart (with live count badge) -->
+      <div class="navicons">
+        <a href="#">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          <span class="lbl">Account</span></a>
+        <a href="cart.html" class="cartlink">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="21" r="1.6" />
+            <circle cx="19" cy="21" r="1.6" />
+            <path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21.5 7H6" />
+            <path d="M12 8v6M9 11h6" />
+          </svg>
+          <span class="lbl">Cart</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= MOBILE DRAWER (nav + search for small screens) ======= -->
+  <nav class="drawer" aria-label="Mobile navigation">
+    <div class="searchbar">
+      <div class="field">
+        <input id="searchInputMobile" type="text" placeholder="Search Product">
+        <span class="go"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.3-4.3" />
+          </svg></span>
+      </div>
+    </div>
+    <a href="index.html">Categories</a>
+    <a href="#">Deals</a>
+    <a href="#">What's New</a>
+    <a href="#">Delivery</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+  <div class="drawer-backdrop"></div>
+
+  <main class="container">
+
+    <!-- ======= HERO : sale banner ======= -->
+    <section class="hero">
+      <div class="panel">
+        <div class="copy">
+          <h1>Grab Upto 50% Off On Selected Headphone</h1>
+          <a class="btn btn-green" href="product.html?id=airpods-max">Buy Now</a>
+        </div>
+        <div class="visual">
+          <img src="assets/img/hero-woman.png" alt="Woman enjoying music on premium headphones">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= FILTER BAR (client-side browsing aids) ======= -->
+    <div class="filterbar" id="filterbar">
+      <button class="fpill" data-filter="type">Headphone Type <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="price">Price <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="review">Review <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="color">Color <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="material">Material <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="offer">Offer <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+      <button class="fpill" data-filter="all">
+        <svg class="ficon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <path d="M3 5h18M7 12h10M10 19h4" />
+        </svg>
+        All Filters</button>
+      <button class="fpill sort" data-filter="sort">Sort by <svg class="icon" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg></button>
+    </div>
+
+    <!-- ======= PRODUCT GRID (rendered from live server catalog) ======= -->
+    <div class="sec-head">
+      <h2>Headphones For You!</h2>
+    </div>
+    <section class="pgrid" id="pgrid"></section>
+
+    <!-- ======= POPULAR CATEGORIES ======= -->
+    <div class="sec-head">
+      <h3>Popular Categories</h3>
+    </div>
+    <section class="catgrid">
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/cat-sofa.png" alt="Furniture"></span><span>
+          <h5>Furniture</h5>
+          <p>240 Item Available</p>
+        </span></a>
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/headphone-silver.png"
+            alt="Headphone"></span><span>
+          <h5>Headphone</h5>
+          <p>240 Item Available</p>
+        </span></a>
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/cat-shoe.png" alt="Shoe"></span><span>
+          <h5>Shoe</h5>
+          <p>240 Item Available</p>
+        </span></a>
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/cat-bag.png" alt="Bag"></span><span>
+          <h5>Bag</h5>
+          <p>240 Item Available</p>
+        </span></a>
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/laptop-pink.png" alt="Laptop"></span><span>
+          <h5>Laptop</h5>
+          <p>240 Item Available</p>
+        </span></a>
+      <a class="cat-tile" href="#"><span class="chip"><img src="assets/img/cat-book.png" alt="Book"></span><span>
+          <h5>Book</h5>
+          <p>240 Item Available</p>
+        </span></a>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="container cols">
+      <div>
+        <div class="flogo">
+          <svg viewBox="0 0 40 40" fill="none" width="32" height="32" aria-hidden="true">
+            <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#fff"
+              stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+            <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#fff" />
+            <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B" />
+            <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#fff" />
+            <circle cx="17" cy="33" r="2.6" fill="#fff" />
+            <circle cx="30" cy="33" r="2.6" fill="#0AAD0A" />
+          </svg>
+          <span>Shopcart</span>
+        </div>
+        <p class="about">Your one-stop department store for electronics, fashion, books and more — delivered fast,
+          priced better.</p>
+      </div>
+      <div>
+        <h6>Company</h6>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Store Locations</a></li>
+          <li><a href="#">Our Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Support</h6>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Track Order</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h6>Get in Touch</h6>
+        <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+          </svg> +001234567890</p>
+        <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <path d="M22 6l-10 7L2 6" />
+          </svg> support@shopcart.com</p>
+        <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="container inner">
+        <span>© 2026 Shopcart. All rights reserved.</span>
+        <span class="links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    /* Home page controller: renders grid + filters once the live catalog
+       (with stock) has arrived from the server. */
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById("pgrid");
+      let current = GRID_ORDER;                       // currently displayed order
+
+      /* (Re)render the grid from server catalog data. */
+      const render = order => {
+        current = order;
+        grid.innerHTML = order.map(cardHTML).join("");
+        bindCards(grid);
+      };
+
+      /* Wait for /api/catalog, then render (also re-run if stock changes later). */
+      const start = () => render(GRID_ORDER);
+      if (CATALOG_READY) start();
+      else document.addEventListener("catalog:ready", start, { once: true });
+
+      /* ----- filter pill dropdowns (browsing aids) ----- */
+      const bar = document.getElementById("filterbar");
+      bar.style.position = "relative";
+      const noop = () => { };
+      const presets = {
+        type: ["Wireless", "Over-Ear", "On-Ear", "Earbuds", "Bone Conduction"],
+        price: ["Under $50", "$50 – $150", "$150 – $500", "Above $500"],
+        review: ["4★ & above", "3★ & above", "All ratings"],
+        color: ["Black", "Red", "Blue", "Green", "Silver"],
+        material: ["Leather", "Mesh Fabric", "Plastic", "Aluminum"],
+        offer: ["50% Off Deal", "Free Delivery", "Cashback"],
+      };
+      Object.keys(presets).forEach(k =>
+        makeMenu(bar.querySelector(`[data-filter="${k}"]`), presets[k], noop));
+
+      makeMenu(bar.querySelector('[data-filter="all"]'), ["Reset all filters"],
+        () => render(GRID_ORDER));
+
+      /* ----- sort dropdown: actually re-orders the grid ----- */
+      makeMenu(bar.querySelector('[data-filter="sort"]'),
+        ["Most Popular", "Price: Low to High", "Price: High to Low", "Alphabetical"],
+        (label, i, menu) => {
+          menu.querySelectorAll("button").forEach(b =>
+            b.classList.toggle("active", b.textContent.trim() === label));
+          let order = [...current];
+          if (i === 1) order.sort((a, b) => CATALOG[a].price - CATALOG[b].price);
+          if (i === 2) order.sort((a, b) => CATALOG[b].price - CATALOG[a].price);
+          if (i === 3) order.sort((a, b) => CATALOG[a].name.localeCompare(CATALOG[b].name));
+          render(order);
+        });
+
+      /* ----- live search (desktop + mobile drawer inputs kept in sync) ----- */
+      const doSearch = q => {
+        q = q.trim().toLowerCase();
+        render(GRID_ORDER.filter(id => CATALOG[id] &&
+          (CATALOG[id].name.toLowerCase().includes(q) ||
+            CATALOG[id].desc.toLowerCase().includes(q))));
+      };
+      const d = document.getElementById("searchInput");
+      const m = document.getElementById("searchInputMobile");
+      if (d) d.addEventListener("input", () => doSearch(d.value));
+      if (m) m.addEventListener("input", () => doSearch(m.value));
+    });
+  </script>
+</body>
+
+</html>

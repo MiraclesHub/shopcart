@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopcart — Your Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- ======= TOP BAR ======= -->
+<div class="topbar">
+  <div class="container inner">
+    <span class="left">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      +001234567890
+    </span>
+    <span class="center">Get 50% Off on Selected Items <span class="sep">|</span> <b>Shop Now</b></span>
+    <span class="right">
+      <button>Eng <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <button>Location <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+    </span>
+  </div>
+</div>
+
+<!-- ======= NAVBAR ======= -->
+<header class="navbar">
+  <div class="container inner">
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+    <a class="logo" href="index.html">
+      <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#003D29" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#003D29"/>
+        <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B"/>
+        <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#003D29"/>
+        <circle cx="17" cy="33" r="2.6" fill="#003D29"/>
+        <circle cx="30" cy="33" r="2.6" fill="#0AAD0A"/>
+      </svg>
+      <span>Shopcart</span>
+    </a>
+    <nav class="mainnav">
+      <a href="index.html">Categories <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></a>
+      <a href="#">Deals</a>
+      <a href="#">What's New</a>
+      <a href="#">Delivery</a>
+    </nav>
+    <div class="searchbar">
+      <div class="field">
+        <input type="text" placeholder="Search Product" aria-label="Search Product">
+        <span class="go"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+      </div>
+    </div>
+    <div class="navicons">
+      <a href="#">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span class="lbl">Account</span></a>
+      <a href="cart.html" class="cartlink">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1.6"/><circle cx="19" cy="21" r="1.6"/><path d="M2.5 3h2l2.6 12.4a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6L21.5 7H6"/><path d="M12 8v6M9 11h6"/></svg>
+        <span class="lbl">Cart</span></a>
+    </div>
+  </div>
+  <div class="nav-rule"></div>
+</header>
+
+<!-- mobile drawer -->
+<nav class="drawer" aria-label="Mobile navigation">
+  <a href="index.html">Categories</a>
+  <a href="#">Deals</a>
+  <a href="#">What's New</a>
+  <a href="#">Delivery</a>
+  <a href="cart.html">Cart</a>
+</nav>
+<div class="drawer-backdrop"></div>
+
+<main class="container">
+  <div class="cart-layout">
+    <!-- LEFT: line items -->
+    <div>
+      <div class="cart-title"><h2>Your Cart</h2><p id="cartCountText"></p></div>
+      <div class="cart-warns" id="cartWarns"></div>
+      <div class="cart-list" id="cartList"></div>
+      <a class="cont-shop" href="index.html">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Continue Shopping</a>
+    </div>
+
+    <!-- RIGHT: order summary -->
+    <aside class="card">
+      <h3>Order Summary</h3>
+      <div class="sumrows">
+        <div class="sum-row"><span>Subtotal</span><b id="sumSub">$0.00</b></div>
+        <div class="sum-row"><span>Shipping</span><b style="color:var(--star)">Free</b></div>
+        <div class="sum-row disc" id="discRow" style="display:none"><span>Discount (SHOP10)</span><b id="sumDisc">–$0.00</b></div>
+        <div class="sum-row total"><span>Total</span><span id="sumTotal">$0.00</span></div>
+      </div>
+      <div class="couponline">
+        <input id="coupon" type="text" placeholder="Enter Coupon Code" autocomplete="off">
+        <button id="applyCoupon">Apply coupon</button>
+      </div>
+      <button class="btn btn-green checkout-btn" id="toCheckout">Proceed to Checkout</button>
+    </aside>
+  </div>
+</main>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer" style="margin-top:0">
+  <div class="container cols">
+    <div>
+      <div class="flogo">
+        <svg viewBox="0 0 40 40" fill="none" width="32" height="32" aria-hidden="true">
+          <path d="M4 7h5.2l3.1 17.2A4 4 0 0 0 16.2 27h12.9a4 4 0 0 0 3.9-3.1L35.5 12H10.2" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="15" y="12" width="3.2" height="8" rx="1.6" fill="#fff"/>
+          <rect x="20.4" y="10" width="3.2" height="10" rx="1.6" fill="#FF852B"/>
+          <rect x="25.8" y="12" width="3.2" height="8" rx="1.6" fill="#fff"/>
+          <circle cx="17" cy="33" r="2.6" fill="#fff"/>
+          <circle cx="30" cy="33" r="2.6" fill="#0AAD0A"/>
+        </svg>
+        <span>Shopcart</span>
+      </div>
+      <p class="about">Your one-stop department store for electronics, fashion, books and more — delivered fast, priced better.</p>
+    </div>
+    <div><h6>Company</h6><ul><li><a href="#">About Us</a></li><li><a href="#">Careers</a></li><li><a href="#">Store Locations</a></li><li><a href="#">Our Blog</a></li></ul></div>
+    <div><h6>Support</h6><ul><li><a href="#">Help Center</a></li><li><a href="#">Track Order</a></li><li><a href="#">Returns</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
+    <div class="contact">
+      <h6>Get in Touch</h6>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +001234567890</p>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg> support@shopcart.com</p>
+      <p><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 4140 Parker Rd. Allentown, New Mexico 31134</p>
+    </div>
+  </div>
+  <div class="bar">
+    <div class="container inner">
+      <span>© 2026 Shopcart. All rights reserved.</span>
+      <span class="links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+<script>
+/* Cart controller.
+   On load the persisted cart is sent to /api/cart/validate which repairs
+   anything stale (clamps qty to live stock, drops sold-out/unknown items)
+   and returns authoritative subtotals. Every user edit re-renders locally
+   and is echoed in the summary. */
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("applyCoupon").onclick = applyCoupon;
+  document.getElementById("toCheckout").onclick = () => {
+    if (!getCart().length){ toast("Your cart is empty", "warn"); return; }
+    location.href = "checkout.html";
+  };
+  if (CATALOG_READY) validateAndRender();
+  else document.addEventListener("catalog:ready", validateAndRender, { once: true });
+});
+
+let COUPON = sessionStorage.getItem("sc_coupon") || "";
+
+/** Ask the server to repair + price the current cart, then render. */
+async function validateAndRender(){
+  try {
+    const r = await fetch("/api/cart/validate", {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ lines: getCart(), coupon: COUPON }) });
+    const data = await r.json();
+    setCart(data.lines);                       // repaired cart becomes truth
+    render(data);
+  } catch { render(null); }                    // offline: render local best-effort
+}
+
+/** Apply/validate the coupon box (SHOP10 = 10%). */
+function applyCoupon(){
+  const v = document.getElementById("coupon").value.trim().toUpperCase();
+  if (v === "SHOP10"){ COUPON = "SHOP10"; sessionStorage.setItem("sc_coupon", "SHOP10");
+                       toast("Coupon applied — 10% off"); }
+  else if (v){ COUPON = ""; sessionStorage.removeItem("sc_coupon");
+               toast("Invalid coupon code", "warn"); }
+  validateAndRender();
+}
+
+/** Render line items + summary. `srv` = server response (authoritative) or null. */
+function render(srv){
+  const list = document.getElementById("cartList");
+  const warns = document.getElementById("cartWarns");
+  const cart = getCart();
+
+  document.getElementById("cartCountText").textContent =
+    cart.length ? `${cartCount()} Item${cartCount() > 1 ? "s" : ""} in your cart`
+                : "Your cart is currently empty";
+
+  /* stock-repair warnings from the server */
+  warns.innerHTML = (srv && srv.warnings || [])
+    .map(w => `<span class="w">${ICONS.warn}${w}</span>`).join("");
+
+  if (!cart.length){
+    list.innerHTML = `<div class="cart-empty"><h3>Your cart is empty</h3>
+                      <p>Browse our headphones collection and grab a deal.</p></div>`;
+    renderTotals(srv);
+    return;
+  }
+
+  list.innerHTML = cart.map(l => {
+    const p = CATALOG[l.id]; if (!p) return "";
+    const maxed = l.qty >= available(l.id);    // "+" disabled at stock cap
+    return `
+    <div class="cart-item" data-id="${l.id}">
+      <a class="cthumb" href="product.html?id=${l.id}"><img src="${p.img}" alt="${p.name}"></a>
+      <div class="cmid">
+        <h4>${p.name}</h4>
+        <div class="rate">${stars(5)}<span class="n">(121)</span></div>
+        <div class="qty">
+          <button data-d="-1" aria-label="Decrease" ${l.qty <= 1 ? "disabled" : ""}>−</button>
+          <span>${l.qty}</span>
+          <button data-d="1" aria-label="Increase" ${maxed ? "disabled" : ""}>+</button>
+        </div>
+        <p class="lineprice">$${fmt(p.price)} each${maxed ? " · max available reached" : ""}</p>
+      </div>
+      <div class="cright">
+        <span class="cprice">$${fmt(p.price * l.qty)}</span>
+        <button class="remove">${ICONS.trash} Remove</button>
+      </div>
+    </div>`;
+  }).join("");
+
+  /* steppers — qty can never exceed live stock (setLineQty clamps too) */
+  list.querySelectorAll(".cart-item").forEach(row => {
+    const id = row.dataset.id;
+    row.querySelectorAll(".qty button").forEach(b => b.onclick = () => {
+      const line = getCart().find(l => l.id === id);
+      if (!line) return;
+      const next = line.qty + (+b.dataset.d);
+      if (next > available(id)){ toast(`Only ${available(id)} × ${CATALOG[id].name} available`, "warn"); return; }
+      setLineQty(id, next);
+      validateAndRender();
+    });
+    row.querySelector(".remove").onclick = () => {
+      setCart(getCart().filter(l => l.id !== id));
+      toast(`${CATALOG[id].name} removed`);
+      validateAndRender();
+    };
+  });
+  renderTotals(srv);
+}
+
+/** Summary numbers — server-authoritative when available. */
+function renderTotals(srv){
+  const sub  = srv ? srv.subtotal  : cartTotal();
+  const disc = srv ? srv.discount  : (COUPON === "SHOP10" ? cartTotal() * .10 : 0);
+  document.getElementById("sumSub").textContent   = "$" + fmt(sub);
+  document.getElementById("discRow").style.display = disc ? "flex" : "none";
+  document.getElementById("sumDisc").textContent  = "–$" + fmt(disc);
+  document.getElementById("sumTotal").textContent = "$" + fmt(sub - disc);
+}
+</script>
+</body>
+</html>
